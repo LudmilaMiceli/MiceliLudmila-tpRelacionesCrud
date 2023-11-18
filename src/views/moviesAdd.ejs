@@ -29,7 +29,7 @@
             <label for="genreID">Genre </label>
             <p>
                 <select name="genre_id" id="" required>
-                    <option value="" disabled selected>- select genre - </option>
+                    <option value="" disabled selected>- Select genre - </option>
                     <% allGenres.forEach(genre => { %>
                     <option value="<%= genre.id %>"><%= genre.name %></option>
                     <% }); %>
