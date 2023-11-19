@@ -13,6 +13,7 @@
     </figure>
     <h1><%= movie.title %> </h1>    
     <br>
+    <p>GENRE: <%= movie.genre %></p>
     <p>RATING: <%= movie.rating %> </p>
     <p>AWARDS: <%= movie.awards %> </p>
     <p>LENGTH: <%= movie.length + ' min'%> </p>
@@ -20,6 +21,12 @@
     <br>
     <section>
         <!--Aquí debe colocar los botones de Modificar - Borrar y Listado de Películas-->
+        
+        <a class="btn btn-primary" href="/movies/edit/<%= movie.id %>" role="button">Editar película</a>
+        <a class="btn btn-danger" href="/movies/delete/<%= movie.id %>" role="button">Borrar película</a>
+        <a class="btn btn-success" href="/movies <%= movie.id %>" role="button">Volver al listado de películas</a>
+        
+    
     </section>
 
 </body>
